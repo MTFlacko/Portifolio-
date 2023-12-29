@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.content-container{
+    height: 100vh;
+  }
+  .profile-container{
+    height: 100%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assests/akin-cakiner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .profile-content{
+    width: 30%;
+  }
+  .profile-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .profile-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid gray;
+  }
+  .name-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .profile-text{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 5px;
+  }
+  .social-media{
+    width: 200px;
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    border: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .profile-button:hover{
+    transform: scale(1.2);
+  }
+  #linkedin{
+    background-image: url(../assests/icons8-linkedin.svg);
+    background-size: cover;
+    
+    
+  }
+  #github{
+    background-image: url(../assests/git.png);
+    background-size: cover;
+  }
+  .divider{
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin-top: 10px;
+  }
+  .tecnologies-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  h4{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 5px;
+  }
+  .tecnologies-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+  
+  .tecnologies img {
+    width: 100px;
+    height: auto;
+    
+  }
+  
+  
+  
+  .profile-sinopse{
+    width: 430px;
+    height: 520px;
+    overflow-y: scroll;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 50px;
+    text-align: justify;
+    background-color: black;
+    border-radius: 8px;
+  }
+  #cv-button{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    color: #020202;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #cv-button:hover{
+    color: #fff;
+  }

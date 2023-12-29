@@ -1,0 +1,336 @@
+@import "./css/formulario.css";
+@import "./css/header.css";
+@import "./css/perfil.css";
+@import "./css/projetos.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import "./ultilidades/componentes.css";
+@import "./ultilidades/cores.css";
+@import "./ultilidades/tipografia.css";
+
+
+
+
+
+
+
+
+
+/*projetos*/
+.project-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assests/inicio.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects-description{
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  color: rgb(233, 225, 225);
+}
+.slider{
+  width: 1024px;
+  height: 576px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.slider:hover{
+  cursor: pointer;
+}
+.slides-img{
+  width: 5120px;
+  display: flex;
+}
+.projects-img img{
+  width: 1024px;
+  height: 576px;
+  transition: transform 1s ease-in-out;
+}
+.slides-btn{
+  color: rgb(223, 207, 207);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.7em;
+  margin-top: -5px;
+  transition: 0.5s;
+}
+.slides-btn:hover{
+  transform: scale(1.5);
+}
+.btn-container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.contact-content{
+  height: 100%;
+  color: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./assests/fundo-clean.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(231, 230, 230);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+input{
+  width: 96%;
+  height: 20px;
+  border-radius: 8px;
+  padding: 7px;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
+select{
+  width: 125px;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  color: b;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+textarea{
+  min-width: 378px;
+  min-height: 170px;
+  max-width: 378px;
+  max-height: 170px;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+}
+#send-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 125px;
+  width: 40%;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 19px;
+  font-family: 'Oswald', sans-serif;
+  background-color: c
+}
+#send-button:hover{
+  color: #fff;
+}
+
+
+/*responsividade*/
+@media (max-width: 420px) {
+  .hero-container{
+    justify-content: space-between;
+    padding: 10px 30px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .menu{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+  }
+  .menu.ativo .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu.ativo .bar:nth-child(2){
+    opacity: 0;
+  }
+  .menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin: 5px auto;
+  }
+  .profile-container{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .profile-content{
+    width: 100%;
+  }
+  .profile-card{
+    border-radius: 0%;
+    width: 88%;
+    margin-top: 0;
+    margin-left: 3px;
+  }
+  .profile-sinopse{
+    margin: 0;
+    width: 93%;
+  }
+  .project-content{
+    display: none;
+  }
+  form{
+    width: 85%;
+    height: 80%;
+  }
+  #input-textarea{
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 170px;
+    max-height: 170px;
+  }
+  #send-button{
+    margin-left: 100px;
+  }
+  nav{
+    width: 50%;
+    position: static;
+    transform: none;
+    padding: 18px 20px;
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 90%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-menu.ativo{
+    right: 0%;
+    z-index: 2;
+  }
+  li{
+    color: #000;
+  }
+  .tecnologies{
+    width: 23%;
+    height: 105%;
+  }
+  .slider{
+    width: 340px;
+    height: 200px;
+  }
+  .projects-img img{
+    width: 340px;
+    height: 200px;
+  }
+  .projects-description{
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    margin: 10px;
+  }
+  .btn-container{
+    margin: 20px;
+  }
+  #btn-back{
+    color: #fff;
+  }
+  #btn-next{
+    color: #fff;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 1024px) {
+  .hero-container{
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+  }
+  header{
+    justify-content: center;
+  }
+  nav{
+    display: flex;
+    width: 95%;
+    position: fixed;
+    margin: auto;
+  }
+  .menu{
+    display: none;
+  }
+  .slider{
+    width: 580px;
+    height: 350px;
+  }
+  .projects-img img{
+    width: 580px;
+    height: 350px;
+  }
+  .projects-description{
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    margin: 10px;
+  }
+  .btn-container{
+    margin: 20px;
+  }
+  #btn-back{
+    color: #fff;
+  }
+  #btn-next{
+    color: #fff;
+  }
+  .profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-card{
+    width: 390px;
+    height: 520px;
+    margin-top: 70px;
+  }
+  .profile-sinopse{
+    margin: 0;
+    width: 410px;
+    margin-bottom: 15px;
+  }
+} 

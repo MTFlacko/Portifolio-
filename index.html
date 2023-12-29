@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateus Franco | portfólio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assests/ccc.png">
+  <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+  <section class="hero-container" id="index">
+    <header>
+      <nav>
+        <ul class="nav-menu">
+          <a class="list-item" href="#index"><li>Início</li></a>
+          <a class="list-item" href="#profile"><li>Tecnologias</li></a>
+          <a class="list-item" href="#projects"><li>Projetos</li></a>
+          <a class="list-item" href="#contact"><li>Contato</li></a>
+        </ul>
+      </nav>
+      <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <h1>Procurando um desenvolvedor Front-End ?</h1>
+    <svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+  </section>
+
+  <section class="content-container" id="profile">
+    <div class="profile-container">
+      <div class="profile-content">
+        <div class="profile-card">
+          <img class="profile-image" src="./assests/Foto-perfil.jfif"/>
+          <span class="name-text">Mateus Franco </span>
+          <span class="profile-text">Foco, disciplica e consistência..</span>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/mateus-franco-9a9493198/" target=_blank">
+              <button class="profile-button" id="linkedin"></button>
+            </a>
+            <a href="https://github.com/MTFlacko" target="_blank">
+              <button class="profile-button" id="github"></button>
+            </a>
+          </div>
+          <div class="divider"></div>
+          <h4>Tecnologias: TypeScript, NodeJS, JavaScript, ReactJS, Mysql </h4>
+          <div class="tecnologies-container">
+            <div class="tecnologies-content">
+              <div class="tecnologies"><img src="./assests/icons8-git.svg" alt="git"></div>
+              <div class="tecnologies" ><img src="./assests/icons8-javascript.svg" alt="JavaScript"></div>
+              <div class="tecnologies" ><img src="./assests/icons8-typescript.svg" alt=""></div>
+              
+            </div>
+            <div class="tecnologies-content">
+              <div class="tecnologies"><img src="./assests/icons8-react-native.svg" alt="React"></div>
+              <div class="tecnologies"><img src="./assests/icons8-nodejs.svg" alt="NodeJS"></div>
+              <div class="tecnologies" ><img src="./assests/icons8-mysql.svg" alt="sql"></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-sinopse">
+        <h1 id="profile-h1">Sobre mim...</h1>
+        <br>
+        <p>Bem-vindo ao meu portfólio,
+          Sou um programador apaixonado por TypeScript, JavaScript e React, 
+          com um forte desejo de aprender, crescer e contribuir para projetos web emocionantes. 
+          Dediquei tempo e esforço para criar 
+          projetos pessoais que demonstram minhas habilidades e minha paixão pelo desenvolvimento.
+           
+        </p> 
+        <br>
+        <a href="./assests/curriculo Mateus Franco doc.pdf" download="MateusFranco.pdf">
+          <button id="cv-button">Baixar CV</button>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="content-container" id="projects">
+    <div class="project-container">
+      <h1 class="profile-h1 ">Alguns Projetos.</h1>
+      <div class="slider">
+        <div class="slides-img">
+
+          <a href="https://mtflacko.github.io/bikcraft/index.html" target="_blank">
+            <div class="projects-img" id="current-img">
+              <img src="./assests/bikcraft.jpg" alt="imagem do projeto">
+            </div>
+          </a>
+
+          <a href="https://batman-react-five.vercel.app/" target="_blank">
+            <div class="projects-img">
+              <img src="./assests/batman.png" alt="imagem do projeto">
+            </div>
+          </a>
+
+          <a href="https://starwarsmateus.netlify.app/" target="_blank">
+            <div class="projects-img">
+              <img src="./assests/star.png" alt="imagem do projeto">
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <div class="btn-container">
+        <div class="slides-btn" id="btn-back">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slides-btn" id="btn-next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <span class="projects-description">
+        *Ao clicar no projeto você será redirecionado ao GitHub Pages.
+      </span>
+    </div>
+  </section>
+
+  <section class="content-container" id="contact">
+    <div class="contact-content">
+      <form
+      action="https://formspree.io/f/mjvqlpnb"
+      method="POST"
+      id="contact-form"
+      target="_blank"
+      >
+        <h3>Entre em contato comigo, Resposta em até 24h</h3>
+        <label>
+          Seu nome:*
+          <input type="text" name="name" style="display: block;" placeholder="Nome Sobrenome" id="input-name" required>
+        </label>
+        <label>
+          Seu e-mail:*
+          <input type="email" name="email" style="display: block;" placeholder="exemplo@email.com" id="input-email" required>
+        </label>
+        <label>
+          Seu telefone:
+          <input type="tel" name="fone" id="input-fone" style="display: block;" placeholder="(11) 98888-8888" minlength="15" maxlength="15">
+        </label>
+        <label>
+          Assunto:*
+          <select name="subject" id="select-subject" style="display: block;">
+            <option value="orçamento">Orçamento</option>
+            <option value="recrutamento">Recrutamento</option>
+          </select>
+        </label>
+        <label>
+          Sua mensagem:*
+          <textarea name="message" style="display: block;" placeholder="Digite sua mensagem" id="input-textarea" required></textarea>
+        </label>
+        <h6>* Campos obrigatórios</h6>
+        <button type="submit" id="send-button">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+ 
+
+  <script src="./script.js"></script>
+
+
+
+ 
+</body>
+</html>
